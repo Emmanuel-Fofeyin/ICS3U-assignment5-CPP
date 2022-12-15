@@ -27,14 +27,14 @@ int main() {
             inputNumberInt = inputNumber;
             if (inputNumber >= 0) {
                 (positiveAnswer) = (positiveAnswer + inputNumberInt);
+            }
             if (inputNumber < 0) {
                 (negativeAnswer) = (negativeAnswer + inputNumberInt);
-                }
             }
         }
-        std::cout << "\nThe negative sum is " << negativeAnswer << " the positive sum is " << positiveAnswer;
+        std::cout << "\nThe negative sum is " << negativeAnswer << ", The positive sum is " << positiveAnswer;
     } catch (std::invalid_argument) {
         std::cout << "This is invalid input" << std::endl;
     }
-    std::cout << "\nDone.";
+    std::cout << "\n\nDone.";
 }
