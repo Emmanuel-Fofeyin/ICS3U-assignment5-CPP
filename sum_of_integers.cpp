@@ -1,4 +1,4 @@
-//!/ usr / bin / env python3
+// Copyright (c) 2022 Emmanuel Fofeyin
 
 // Created by : Emmanuel
 // Created on : Nov 2022
@@ -32,7 +32,8 @@ int main() {
                 (negativeAnswer) = (negativeAnswer + inputNumberInt);
             }
         }
-        std::cout << "\nThe negative sum is " << negativeAnswer << ", The positive sum is " << positiveAnswer;
+        std::cout << "\nThe negative sum is "
+        << negativeAnswer << ", The positive sum is " << positiveAnswer;
     } catch (std::invalid_argument) {
         std::cout << "This is invalid input" << std::endl;
     }
