@@ -22,7 +22,7 @@ int main() {
     try {
         while (repeat < 4) {
             repeat = repeat + 1;
-            std::cout << "Enter an integer ";
+            std::cout << "Enter an integer: ";
             std::cin >> inputNumber;
             inputNumberInt = inputNumber;
             if (inputNumber >= 0) {
@@ -32,11 +32,9 @@ int main() {
                 (negativeAnswer) = (negativeAnswer + inputNumberInt);
             }
         }
-        std::cout << "\nThe negative sum is "
-        << negativeAnswer << ", The positive sum is " << positiveAnswer;
+        std::cout << "\nThe negative sum is " << negativeAnswer << ", The positive sum is " << positiveAnswer;
     } catch (std::invalid_argument) {
         std::cout << "This is invalid input" << std::endl;
     }
     std::cout << "\n\nDone.";
 }
-
